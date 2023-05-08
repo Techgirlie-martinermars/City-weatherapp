@@ -1,20 +1,16 @@
 .weather-app {
   max-width: 500px;
-
   margin: 30px auto;
   display: block;
   padding: 20px;
   border: 1px solid violet;
   border-radius: 6px;
 }
-.search-box {
-  font-size: 20px;
-  border-radius: 4px;
-}
-h2 {
+
+h1 {
   font-size: 24px;
-  line-height: 26px;
-  margin-bottom: 0 auto;
+  line-height: 24px;
+  margin-top: 0 auto;
 }
 ul {
   margin: 0 auto;
@@ -23,6 +19,7 @@ ul {
 li {
   list-style: none;
   font-size: 16px;
+  padding: auto;
 }
 strong {
   margin-top: 30px auto;
@@ -32,4 +29,11 @@ strong {
 .unit {
   position: relative;
   top: -16px;
+  text-decoration: none;
+}
+small {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
 }
