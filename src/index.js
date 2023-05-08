@@ -15,7 +15,15 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#currentDate");
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let now = new Date();
   let day = days[now.getDay()];
   let hours = now.getHours().toString().padStart(2, "0");

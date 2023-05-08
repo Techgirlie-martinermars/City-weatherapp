@@ -3,23 +3,27 @@
   margin: 30px auto;
   display: block;
   padding: 20px;
-  border: 1px solid violet;
+  border: 1px solid grey;
   border-radius: 6px;
 }
 
 h1 {
   font-size: 24px;
   line-height: 24px;
-  margin-top: 0 auto;
+  margin-left: 35px;
 }
 ul {
+  list-style: none;
   margin: 0 auto;
   padding: 0 auto;
+  line-height: 24px;
 }
+
 li {
   list-style: none;
   font-size: 16px;
-  padding: auto;
+  padding: 0 auto;
+  margin: 0 auto;
 }
 strong {
   margin-top: 30px auto;
@@ -36,4 +40,11 @@ small {
   display: block;
   text-align: center;
   font-size: 14px;
+}
+#city-input {
+  display: block;
+  width: 400px;
+  padding: 10px auto;
+  margin: 30px auto;
+  border: 1px solid grey;
 }
