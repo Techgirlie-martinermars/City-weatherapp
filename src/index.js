@@ -25,8 +25,20 @@ currentDate.innerHTML = `${day},${time}`;
   iconElement.setAttribute("src",`https://openweathermap.org/img/wn/04d@2x.png`);
 }
 
-
-let apiKey = "c85848972317ffffa0940e531019fa7a";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Nairobi&appid=${apiKey}&units=metric`;
-
+function search(city) {
+  let apiKey = "c85848972317ffffa0940e531019fa7a";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+  
+search("Nairobi");

@@ -23,7 +23,7 @@ ul{
 li{
   list-style:none;
   font-size: 16px;
-text-transform: capitalize;
+
 }
 strong{
   margin-top: 30px auto;
@@ -34,4 +34,15 @@ strong{
   position: relative;
   top: -16px;
   
+}
+.btn-primary {
+  padding: 8px 16px;
+  font-size: 19px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin-left: 4px;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
 }
