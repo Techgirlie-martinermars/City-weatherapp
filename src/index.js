@@ -1,5 +1,5 @@
 function displayTemperature(response) {
-  console.log(response.data);
+  
   let cityElement = document.querySelector("#city"); 
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
@@ -10,6 +10,19 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   cityElement.innerHTML = (response.data.name);
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
+let dateElement = document.querySelector("#currentDate");
+
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let now = new Date();
+let day = days[now.getDay()];
+let hours = now.getHours().toString().padStart(2, "0");
+let minutes = now.getMinutes().toString().padStart(2, "0");
+
+let time = `${hours}:${minutes}`;
+currentDate.innerHTML = `${day},${time}`;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src",`https://openweathermap.org/img/wn/04d@2x.png`);
 }
 
 
