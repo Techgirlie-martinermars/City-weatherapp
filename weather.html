@@ -9,6 +9,7 @@
   rel="stylesheet" 
   integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
   crossorigin="anonymous">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <link rel="stylesheet"  href="src/styles.css" />
     
 </head>
@@ -22,30 +23,34 @@
             placeholder="Enter a city"
             id="search-input w-50"/>
             </h1>
-            <h2>
-            Nairobi,Kenya</h2>
+            <h2 id="city">
+            </h2>
             <ul>
               <li>Sunday 9:00</li>
-<li>Scattered Thunderstorm</li>
+<li id="description"></li>
             </ul>
         <div class="row">
           <div class="col-6">
-        <img src="" alt="Clear" />
-        24°C|°F
+            <div class="clearfix ">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png
+" alt="Clear"
+        class="float-left" />
+        
+       <strong id="temperature"></strong><span class="unit">°C|°F</span>
+        
+        </div>
         </div>
       <div class="col-6">
         <ul>
-          <li>
-            Precipitation:0%
-          </li>
-         <li>Windspeed:5km/hr</li> 
-         <li>Humidity:45%</li>
+          
+         <li>Windspeed:<span id="wind"></span></li> 
+         <li>Humidity:<span id="humidity"></span></li>
         </ul>
         </div>
         </div>
 <small><a href="https://github.com/Techgirlie-martinermars/City-weatherapp" target="_blank">Open-source code</a>by Martiner Winceit</small>
        </div>
        </div>
-       
+    <script src="src/index.js"></script>   
 </body>
 </html>
