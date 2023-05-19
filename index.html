@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
-  crossorigin="anonymous">
-  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-  <link rel="stylesheet"  href="src/styles.css" />
-    
-</head>
-<body>
-  <div class="contaier">
-    <div class="weather-app">
-  
-  <div class="search-box  ">
-    <form id="search-form" class="mb-3">
-    
-        
-    <input
-            type="search"
-            placeholder="Enter a city"
-            class="form-control"
-            id="city-input"
-            autocomplete="off"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="contaier">
+      <div class="weather-app">
+        <div class="search-box">
+          <form id="search-form" class="mb-3">
+            <input
+              type="search"
+              placeholder="Enter a city"
+              class="form-control"
+              id="city-input"
+              autocomplete="off"
             />
-             </form>
-          
-            <h1 id="city">
-            </h1>
+          </form>
+
+          <h1 id="city"></h1>
+          <ul>
+            <li id="currentDate"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png
+"
+                  alt="Clear"
+                  id="icon"
+                  class="float-left"
+                />
+
+                <strong id="temperature"></strong
+                ><span class="unit">
+                  <a href="#" id="celsius-link">°C</a>
+                  |<a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
             <ul>
-              <li id="currentDate"></li>
-<li id="description"></li>
+              <li>Windspeed:<span id="wind"></span>km/hr</li>
+              <li>Humidity:<span id="humidity"></span></li>
             </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix ">
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png
-" alt="Clear"
-id="icon"
-        class="float-left" />
-        
-       <strong id="temperature"></strong><span class="unit">
-        <a href="#" id="celsius-link">°C</a>
-        |<a href="#" id="fahrenheit-link">°F</a>
-      </span>
-        
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        </div>
-      <div class="col-6">
-        <ul>
-          
-         <li>Windspeed:<span id="wind"></span>km/hr</li> 
-         <li>Humidity:<span id="humidity"></span></li>
-        </ul>
-        </div>
-        </div>
-<small><a href="https://github.com/Techgirlie-martinermars/City-weatherapp" target="_blank">Open-source code</a>by Martiner Winceit</small>
-       </div>
-       </div>
-    <script src="src/index.js"></script>   
-</body>
+        <small>
+          <a
+            href="https://github.com/Techgirlie-martinermars/City-weatherapp"
+            target="_blank"
+            >Open-source code</a
+          >by Martiner Winceit</small
+        >
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
