@@ -11,7 +11,9 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -30,19 +32,13 @@
 
           <h1 id="city"></h1>
           <ul>
-            <li id="currentDate"></li>
+            <li>Last Updated: <span id="date"></span></li>
             <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
               <div class="clearfix">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png
-"
-                  alt="Clear"
-                  id="icon"
-                  class="float-left"
-                />
+                <img src="" alt="Clear" id="icon" class="float-left" />
 
                 <strong id="temperature"></strong
                 ><span class="unit">
@@ -65,8 +61,8 @@
             href="https://github.com/Techgirlie-martinermars/City-weatherapp"
             target="_blank"
             >Open-source code</a
-          >by Martiner Winceit</small
-        >
+          >by Martiner Winceit
+        </small>
       </div>
     </div>
     <script src="src/index.js"></script>
