@@ -80,6 +80,7 @@ function getForecast(coordinates) {
 function displayTemperature(response) {
   console.log("response");
   let cityElement = document.querySelector("#city");
+
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
@@ -98,11 +99,14 @@ function displayTemperature(response) {
     "src",
     `https://openweathermap.org/img/wn/04d@2x.png`
   );
+
   getForecast(response.data.coord);
+
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function search(city) {
-  
   let apiKey = "b35c686ba9565ba0ab254c2230937552";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 

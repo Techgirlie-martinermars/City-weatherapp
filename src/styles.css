@@ -44,12 +44,7 @@ strong {
   top: -16px;
   text-decoration: none;
 }
-small {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-}
+
 #city-input {
   display: block;
   width: 400px;
@@ -69,4 +64,11 @@ small {
   text-align: center;
   margin: 0 5px;
   flex-basis: calc(20% -10px);
+}
+small {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
 }
